@@ -1,7 +1,7 @@
 import { ServiceEndpointDefinition } from '@apollo/gateway';
 
 const baseConfig: Config = {
-  port: parseInt(process.env.PORT, 10) || 6000,
+  port: parseInt(process.env.PORT, 10) || 8000,
   serviceName: process.env.SERVICE_NAME || 'Gateway Service',
   microServices: [
     {
