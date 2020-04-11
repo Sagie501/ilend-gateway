@@ -6,11 +6,15 @@ const baseConfig: Config = {
   microServices: [
     {
       name: 'Users',
-      url: 'http://localhost:4000/graphql'
+      url: 'http://localhost:5000/graphql'
     },
     {
       name: 'Products',
-      url: 'http://localhost:5000/graphql'
+      url: 'http://localhost:5001/graphql'
+    },
+    {
+      name: 'Addresses',
+      url: 'http://localhost:5002/graphql'
     }
   ]
 };
