@@ -15,6 +15,10 @@ const baseConfig: Config = {
     {
       name: 'Addresses',
       url: 'http://localhost:5002/graphql'
+    },
+    {
+      name: 'Leasing',
+      url: 'http://localhost:5003/graphql'
     }
   ]
 };
