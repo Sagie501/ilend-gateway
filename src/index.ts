@@ -12,6 +12,8 @@ const config: Config = Environment.getConfig();
 // your implementing service names and URLs
 const gateway = new ApolloGateway({
   serviceList: config.microServices,
+  debug: true,
+  experimental_pollInterval: 60000
 });
 
 // Pass the ApolloGateway to the ApolloServer constructor
