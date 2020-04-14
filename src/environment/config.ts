@@ -8,18 +8,18 @@ const baseConfig: Config = {
       name: 'Users',
       url: 'http://193.106.55.108:5000/graphql'
     },
-    // {
-    //   name: 'Products',
-    //   url: 'http://localhost:5001/graphql'
-    // },
-    // {
-    //   name: 'Addresses',
-    //   url: 'http://localhost:5002/graphql'
-    // },
-    // {
-    //   name: 'Leasing',
-    //   url: 'http://localhost:5003/graphql'
-    // }
+    {
+      name: 'Products',
+      url: 'http://localhost:5001/graphql'
+    },
+    {
+      name: 'Addresses',
+      url: 'http://localhost:5002/graphql'
+    },
+    {
+      name: 'Leasing',
+      url: 'http://localhost:5003/graphql'
+    }
   ]
 };
 
@@ -28,7 +28,13 @@ export const config: EnvironmentConfig = {
     ...baseConfig
   },
   prod: {
-    ...baseConfig
+    ...baseConfig,
+    microServices: [
+      {
+        name: 'Users',
+        url: 'http://ilend-user-service:5000/graphql'
+      }
+    ]
   }
 };
 
