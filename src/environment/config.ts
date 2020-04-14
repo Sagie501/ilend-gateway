@@ -32,7 +32,7 @@ export const config: EnvironmentConfig = {
     microServices: [
       {
         name: 'Users',
-        url: 'http://ilend-user-service:5000/graphql'
+        url: 'http://ilend-users-service:5000/graphql'
       }
     ]
   }
