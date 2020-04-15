@@ -33,6 +33,18 @@ export const config: EnvironmentConfig = {
       {
         name: 'Users',
         url: 'http://127.0.0.1:5000/graphql'
+      },
+      {
+        name: 'Products',
+        url: 'http://127.0.0.1:5001/graphql'
+      },
+      {
+        name: 'Addresses',
+        url: 'http://127.0.0.1:5002/graphql'
+      },
+      {
+        name: 'Leasing',
+        url: 'http://127.0.0.1:5003/graphql'
       }
     ]
   }
