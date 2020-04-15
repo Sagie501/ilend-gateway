@@ -10,5 +10,7 @@ RUN npm run build
 
 WORKDIR /home/cs806/ilend/ilend-gateway/dist
 
+ENV NODE_ENV prod
+
 EXPOSE 80
 CMD [ "node", "index.js" ]
