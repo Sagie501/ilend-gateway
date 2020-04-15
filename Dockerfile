@@ -12,5 +12,5 @@ WORKDIR /home/cs806/ilend/ilend-gateway/dist
 
 ENV NODE_ENV prod
 
-EXPOSE 80
+EXPOSE 443
 CMD [ "node", "index.js" ]
