@@ -3,6 +3,8 @@ import { ServiceEndpointDefinition } from '@apollo/gateway';
 const baseConfig: Config = {
   port: parseInt(process.env.PORT, 10) || 443,
   serviceName: process.env.SERVICE_NAME || 'Gateway Service',
+  isDebugMode: process.env.IS_DEBUG_MODE === 'true' || true,
+  pollInterval: parseInt(process.env.POLL_INTERVAL, 10) || 60000,
   microServices: [
     {
       name: 'Users',
@@ -58,5 +60,7 @@ export interface EnvironmentConfig {
 export interface Config {
   port: number;
   serviceName: string;
+  isDebugMode: boolean;
+  pollInterval: number;
   microServices: Array<ServiceEndpointDefinition>;
 }
