@@ -8,6 +8,8 @@ const app = express();
 
 const config: Config = Environment.getConfig();
 
+app.use(express.json({limit: Infinity}));
+
 // Initialize an ApolloGateway instance and pass it an array of
 // your implementing service names and URLs
 const gateway = new ApolloGateway({
